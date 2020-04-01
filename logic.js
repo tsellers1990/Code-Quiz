@@ -99,10 +99,10 @@ function scoreLog(){
     userInitials = initialsEl.value;
     var toArray = {name: userInitials, score: time}
 
-    leaderBoardArray.push(toArray);
     endScreenEl.setAttribute("class" , "hide");
     questionsEl.setAttribute("class" , "hide")
     startScreenEl.removeAttribute("class")
+    leaderBoardArray.push(toArray);
 }
     //leaderBoardArray -> obj{initials get set as an attribute -> time gets set as an attribute}
 
@@ -121,3 +121,5 @@ function hsb(){
 // user clicks button to start quiz
 startBtn.onclick = startQuiz;
 highScoreBtn.onclick = hsb;
+
+//why does the endScreen not go away
